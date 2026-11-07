@@ -189,9 +189,64 @@ nav.scrolled { background:var(--bg); border-bottom:1px solid var(--border); }
 #progress-bar { position:fixed; top:0; left:0; height:2px; background:linear-gradient(90deg,var(--cyan),var(--electric),var(--pink)); z-index:200; transition:width 0.1s; }
 
 @media (max-width:900px) {
-  .hero-grid,.skills-layout,.about-grid { grid-template-columns:1fr; }
+  section { padding:72px 6vw; }
+  .hero-grid,.skills-layout,.about-grid { grid-template-columns:1fr; gap:36px; }
   #brain-canvas { display:none; }
+  #skill-canvas { max-width:360px; margin:0 auto; }
+  .skills-layout { max-width:700px; }
   .stats-row { flex-wrap:wrap; gap:24px; }
+  .projects-grid { grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); }
+}
+
+@media (max-width:640px) {
+  html { scroll-padding-top:96px; }
+  body { cursor:auto; }
+  #cursor,#cursor-ring { display:none; }
+  nav { justify-content:center; padding:10px 16px; background:rgba(2,4,8,0.96); backdrop-filter:blur(16px); }
+  .nav-links { width:100%; justify-content:center; flex-wrap:wrap; gap:4px 16px; }
+  .nav-links a { display:block; padding:7px 0; font-size:9px; letter-spacing:1px; }
+  section { min-height:100vh; min-height:100svh; padding:96px 20px 56px; }
+  #hero { padding-top:132px; padding-bottom:56px; }
+  .hero-grid { gap:32px; }
+  .hero-label { font-size:9px; letter-spacing:2px; line-height:1.7; }
+  .hero-name { font-size:clamp(52px,15vw,72px); }
+  .hero-role { font-size:11px; line-height:1.8; }
+  #terminal-bio { padding:16px 14px; font-size:11px; line-height:1.8; overflow-wrap:anywhere; }
+  .hero-ctas { gap:10px; margin-top:24px; }
+  .hero-ctas a { flex:1 1 150px; text-align:center; padding:12px 14px; font-size:10px; }
+  .stats-row { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px 12px; margin-top:32px; padding-top:22px; }
+  .stat-item { margin:0; padding:0; border:0; }
+  .stat-num { font-size:40px; }
+  .stat-label { font-size:9px; letter-spacing:1px; }
+  .sec-label { font-size:9px; letter-spacing:3px; }
+  .sec-title { font-size:clamp(38px,11vw,58px); margin-bottom:32px; }
+  .skills-layout { gap:28px; }
+  #skill-canvas { max-width:300px; }
+  .skill-categories { gap:20px; }
+  .skill-cat-title { font-size:9px; letter-spacing:2px; }
+  .pill { padding:6px 10px; font-size:10px; cursor:pointer; }
+  .timeline { padding-left:32px; }
+  .exp-dot { left:-36px; }
+  .exp-item { margin-bottom:44px; }
+  .exp-date { font-size:9px; letter-spacing:1px; }
+  .exp-role { font-size:24px; }
+  .exp-company { font-size:11px; }
+  .exp-tech { font-size:10px; }
+  .exp-bullets li { font-size:13px; line-height:1.65; padding-left:15px; }
+  .projects-grid { grid-template-columns:1fr; gap:16px; }
+  .proj-card { padding:24px 18px; }
+  .proj-num { font-size:48px; }
+  .proj-name { font-size:23px; }
+  .about-grid { gap:28px; }
+  .about-text { font-size:14px; }
+  .terminal-body { padding:16px 14px; font-size:10px; overflow-wrap:anywhere; }
+  .resume-copy { font-size:14px; }
+  .resume-actions { flex-direction:column; max-width:320px; margin:0 auto; }
+  .resume-actions a { text-align:center; }
+  .contact-big { font-size:clamp(44px,13vw,68px); }
+  .contact-sub { font-size:12px; line-height:1.7; margin-bottom:32px; }
+  .contact-links { width:100%; max-width:360px; flex-direction:column; gap:12px; }
+  .contact-link { justify-content:center; padding:13px 16px; font-size:11px; }
 }
 </style>
 </head>
