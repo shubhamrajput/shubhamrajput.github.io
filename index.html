@@ -167,6 +167,13 @@ nav.scrolled { background:var(--bg); border-bottom:1px solid var(--border); }
 .terminal-body { padding:20px 24px; font-family:'Space Mono',monospace; font-size:12px; line-height:1.9; }
 .t-prompt{color:var(--cyan)} .t-cmd{color:#fff} .t-out{color:var(--text);opacity:0.7} .t-key{color:var(--amber)} .t-val{color:var(--electric)}
 
+/* RESUME */
+#resume { flex-direction:column; text-align:center; }
+.resume-content { width:100%; max-width:840px; }
+.resume-content .sec-title { margin-bottom:24px; }
+.resume-copy { max-width:680px; margin:0 auto 32px; font-size:15px; line-height:1.8; color:var(--text); }
+.resume-actions { display:flex; justify-content:center; gap:16px; flex-wrap:wrap; }
+
 /* CONTACT */
 #contact { flex-direction:column; text-align:center; }
 .contact-big { font-family:'Bebas Neue',sans-serif; font-size:clamp(48px,8vw,120px); color:#fff; line-height:1; letter-spacing:2px; margin-bottom:16px; }
@@ -201,6 +208,7 @@ nav.scrolled { background:var(--bg); border-bottom:1px solid var(--border); }
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#resume">Resume</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -470,9 +478,22 @@ nav.scrolled { background:var(--bg); border-bottom:1px solid var(--border); }
   </div>
 </section>
 
+<!-- RESUME -->
+<section id="resume">
+  <div class="resume-content">
+    <p class="sec-label">// 06 — Career Profile</p>
+    <h2 class="sec-title">Resume <span>PDF</span></h2>
+    <p class="resume-copy">A concise overview of my experience at HackerRank, Vimeo, and Samsung Research Institute, along with my technical skills and education.</p>
+    <div class="resume-actions">
+      <a class="btn-primary" href="/files/shubham-rajput.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+      <a class="btn-ghost" href="/files/shubham-rajput.pdf" download>Download PDF</a>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact">
-  <p class="sec-label">// 06 — Let's Connect</p>
+  <p class="sec-label">// 07 — Let's Connect</p>
   <h2 class="contact-big">Let's <span>Build</span><br>Together</h2>
   <p class="contact-sub">Open to Senior SDE · Fullstack · Backend · Platform Engineering roles</p>
   <div class="contact-links">
