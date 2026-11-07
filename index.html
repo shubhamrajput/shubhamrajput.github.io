@@ -127,6 +127,8 @@ nav.scrolled { background:var(--bg); border-bottom:1px solid var(--border); }
 .exp-date { font-family:'Space Mono',monospace; font-size:10px; letter-spacing:2px; color:var(--cyan); margin-bottom:6px; text-transform:uppercase; }
 .exp-role { font-family:'Bebas Neue',sans-serif; font-size:28px; color:#fff; letter-spacing:1px; line-height:1; }
 .exp-company { font-family:'Space Mono',monospace; font-size:12px; color:var(--electric); margin:4px 0 16px; }
+.exp-tech { font-family:'Space Mono',monospace; font-size:11px; line-height:1.7; color:var(--muted); margin:-8px 0 16px; }
+.exp-tech strong { color:var(--cyan); font-weight:400; }
 .exp-bullets { list-style:none; }
 .exp-bullets li { font-size:14px; line-height:1.7; color:var(--text); padding:5px 0 5px 18px; position:relative; }
 .exp-bullets li::before { content:'▸'; position:absolute; left:0; color:var(--cyan); font-size:10px; top:8px; }
@@ -310,32 +312,51 @@ nav.scrolled { background:var(--bg); border-bottom:1px solid var(--border); }
       <div class="exp-item">
         <div class="exp-dot"></div>
         <p class="exp-date">Apr 2024 — Apr 2026</p>
-        <h3 class="exp-role">SDE2 — Fullstack</h3>
+        <h3 class="exp-role">Software Engineer II — Full Stack</h3>
         <p class="exp-company">HackerRank — Remote, IN</p>
+        <p class="exp-tech"><strong>Tech:</strong> Node.js, TypeScript, React, Next.js, Python, PostgreSQL, Elasticsearch, Redis, AWS</p>
         <ul class="exp-bullets">
-          <li>Led <strong>emoji-support DB migration</strong> on one of the system's largest tables — fixed collation inconsistencies at column, table, and connection-string levels across multiple services.</li>
-          <li>Built <strong>agent-based skills</strong> to automate vulnerability assessment and remediation workflows.</li>
-          <li>Implemented <strong>event-driven autoscaling with KEDA</strong> to dynamically scale the Code Quality microservice based on queue load, improving throughput under peak traffic.</li>
-          <li>Engineered a <strong>dynamic email pipeline</strong> for Engage platform — recruiters can customise content and inject personalised variables before dispatch via Postmark.</li>
-          <li>Integrated <strong>Google Analytics Reporting API</strong> to fetch page-view data by pagePath, enabling data-driven microsite engagement insights.</li>
-          <li>Used <strong>OpenAI Batch API</strong> with optimised batching and prompt engineering to extract roles and key skills from large candidate datasets efficiently.</li>
-          <li>Migrated <strong>Elasticsearch index data</strong> and ingestion pipelines to a new cluster — re-indexing, mapping adjustments, and ingestion job testing with minimal downtime.</li>
-          <li>Refactored <strong>email campaign workflow</strong> execution logic, significantly cutting failure rates and adding monitoring alerts for faster debugging.</li>
+          <li>Designed and developed <strong>scalable backend services</strong> using Node.js and TypeScript for HackerRank Engage, powering enterprise hiring workflows and recruiter-facing features.</li>
+          <li>Built a <strong>configurable email campaign platform</strong> with personalised invitation and reminder campaigns, dynamic content, automated scheduling, and Postmark integration.</li>
+          <li>Developed analytics services with the <strong>Google Analytics Reporting API</strong>, helping event organisers monitor microsite engagement and user activity.</li>
+          <li>Built <strong>Python automation pipelines</strong> using OpenAI Batch API to extract candidate roles and skills from large datasets.</li>
+          <li>Consolidated ContactOut, PDL, and Elasticsearch data into a new cluster; developed ingestion pipelines, optimised mappings, re-indexed datasets, validated data, and regenerated ML embeddings for semantic search.</li>
+          <li>Designed and implemented <strong>RESTful APIs</strong> for university hiring workflows in collaboration with frontend engineers.</li>
+          <li>Built <strong>AI-powered agent workflows</strong> to automate vulnerability assessment and remediation.</li>
+          <li>Led a high-volume email table migration, resolving database collation issues and enabling full emoji support without service disruption.</li>
+          <li>Refactored workflow execution and monitoring to improve reliability and reduce incident resolution time.</li>
+          <li>Served as an <strong>on-call engineer</strong> for critical production systems and resolved high-priority incidents.</li>
+          <li>Implemented workflow failure alerts for faster debugging and better team visibility.</li>
         </ul>
       </div>
 
       <div class="exp-item">
         <div class="exp-dot" style="background:var(--electric);box-shadow:0 0 12px var(--electric)"></div>
         <p class="exp-date" style="color:var(--electric)">Jul 2021 — Mar 2024</p>
-        <h3 class="exp-role">Software Engineer 2 (IC2)</h3>
+        <h3 class="exp-role">Software Engineer II</h3>
         <p class="exp-company">Vimeo — Bangalore, IN</p>
+        <p class="exp-tech"><strong>Tech:</strong> React.js, Next.js, Node.js, PHP, Python, Redis, GCP</p>
         <ul class="exp-bullets">
           <li>Designed a <strong>private upload workflow</strong> reusing existing metadata and media assets — eliminated redundant transcoding and significantly cut processing time.</li>
-          <li>Shipped a <strong>demo video creation feature</strong> as an A/B experiment, allowing users to create clips without uploading videos and boosting activation metrics.</li>
-          <li>Improved safety in a <strong>large PHP codebase</strong> via Psalm-based static analysis; published private NPM packages to JFrog Artifactory.</li>
-          <li>Developed an <strong>in-house CMS on Builder.io</strong> enabling the marketing team to update website content without engineering involvement.</li>
-          <li>Collaborated with SRE to integrate <strong>CI/CD pipelines</strong> for Builder.io pages; used New Relic to diagnose and resolve production issues.</li>
-          <li>Improved <strong>website SEO</strong> using JSON-LD schema, including JobPosting schema for structured data.</li>
+          <li>Delivered a <strong>demo video creation feature</strong> through experimentation, letting users create clips without uploading new media and improving activation; used Psalm to catch errors in a complex PHP project.</li>
+          <li>Developed an <strong>in-house CMS on Builder.io</strong> so the marketing team could update website content without engineering support.</li>
+          <li>Integrated reusable <strong>React components with Builder.io APIs</strong> for rapid page creation and content management.</li>
+          <li>Led a registration growth initiative across services, building reusable modal variants for React and PHTML experiences and increasing registrations by <strong>10%</strong>.</li>
+          <li>Improved website SEO with multiple JSON-LD schemas, including <strong>JobPosting schema</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-dot" style="background:var(--pink);box-shadow:0 0 12px var(--pink)"></div>
+        <p class="exp-date" style="color:var(--pink)">Jan 2021 — Jul 2021</p>
+        <h3 class="exp-role">Software Engineering Intern</h3>
+        <p class="exp-company">Vimeo — Remote, IN</p>
+        <ul class="exp-bullets">
+          <li>Implemented marketing features and pages using Vimeo design guidelines and <strong>Figma prototypes</strong>.</li>
+          <li>Improved website conversion rates through <strong>A/B testing</strong>.</li>
+          <li>Analysed user behaviour with <strong>Amplitude</strong> and applied data-driven improvements.</li>
+          <li>Migrated legacy React pages to <strong>Next.js</strong>, improving Lighthouse scores, LCP, TTI, and page load times.</li>
+          <li>Fixed bugs in the <strong>core backend</strong>.</li>
         </ul>
       </div>
 
